@@ -30,6 +30,7 @@ import {
   TagIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
+import Image from "next/image";
 
 const navListMenuItems = [
   {
@@ -215,20 +216,26 @@ export function DefaultTopNav() {
         <Typography
           as="a"
           href="#"
-          variant="h6"
-          className="mr-4 cursor-pointer py-1.5 lg:ml-2"
+          variant="small"
+          color="black"
+          className="mr-4 cursor-pointer py-1.5 lg:ml-2 flex flex-col items-center justify-center"
         >
-          Material Tailwind
+          <Image
+            src={"/assets/images/logo/gym-match-logo.svg"}
+            alt="logo image"
+            width={76}
+            height={75}
+          />
         </Typography>
         <div className="hidden lg:block">
           <NavList />
         </div>
         <div className="hidden gap-2 lg:flex">
           <Button variant="text" size="sm" color="blue-gray">
-            Log In
+            criar conta
           </Button>
           <Button variant="gradient" size="sm">
-            Sign In
+            ENTRAR
           </Button>
         </div>
         <IconButton
@@ -248,10 +255,10 @@ export function DefaultTopNav() {
         <NavList />
         <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
           <Button variant="outlined" size="sm" color="blue-gray" fullWidth>
-            Log In
+            criar conta
           </Button>
           <Button variant="gradient" size="sm" fullWidth>
-            Sign In
+            ENTRAR
           </Button>
         </div>
       </Collapse>

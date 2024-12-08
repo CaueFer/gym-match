@@ -8,16 +8,13 @@ function Hero() {
     <section className="w-full px-14 py-14">
       <div className="flex flex-col lg:flex-row justify-between">
         <div>
-          <h1 className="font-poppins md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-7.2">
-            Encontre o personal perfeito
-            <br /> para atingir seus objetivos
+          <h1 className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-start relative bg-clip-text text-transparent bg-gradient-to-b from-black via-gray-800 to-gray-800 dark:from-neutral-800 dark:via-white dark:to-white">
+            Encontre o personal <br />
+            perfeito para atingir <br />
+            seus objetivos
           </h1>
-          <p className="font-poppins text-sm sm:text-lg md:text-lg lg:text-lg text-gray mt-7">
-            Conectamos você com os melhores profissionais
-            <br className="hidden lg:flex" />
-            especializados para transformar sua saúde e
-            <br className="hidden lg:flex" />
-            alcançar resultados de forma personalizada.
+          <p className="font-poppins text-sm sm:text-lg md:text-lg lg:text-lg text-gray mt-5">
+            Conectamos você com os melhores profissionais.
           </p>
           <div className="mt-8">
             <h2 className="font-poppins text-20 sm:text-xl md:text-xl lg:text-2xl font-bold text-left">
@@ -36,7 +33,13 @@ function Hero() {
             >
               <Button variant="outlined">Saiba como funciona</Button>
 
-              <Button variant="gradient">Quero encontrar meu personal</Button>
+              <Button
+                variant="gradient"
+                color="indigo"
+                className="bg-primaryPurple"
+              >
+                Quero encontrar meu personal
+              </Button>
             </div>
           </div>
         </div>
