@@ -3,19 +3,20 @@
 import React from "react";
 import { Typography } from "@material-tailwind/react";
 import Image from "next/image";
+import Link from "next/link";
 
 const LINKS = [
   {
-    title: "Product",
-    items: ["Overview", "Features", "Solutions", "Tutorials"],
+    title: "Produto",
+    items: ["Overview", "Features", "Dúvidas", "Tutorials"],
   },
   {
-    title: "Company",
-    items: ["About us", "Careers", "Press", "News"],
+    title: "Companhia",
+    items: ["Sobre nós", "Carreira", "News"],
   },
   {
-    title: "Resource",
-    items: ["Blog", "Newsletter", "Events", "Help center"],
+    title: "Recursos",
+    items: ["Blog", "Newsletter", "Suporte ao Cliente"],
   },
 ];
 
@@ -26,20 +27,23 @@ function DefaultFooter() {
     <footer className="relative w-full">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 items-start gap-4 md:grid-cols-2">
-          <div className="flex flex-row justify-start items-center gap-1">
+          <Link
+            className="flex flex-col justify-start items-start gap-1 w-1/2"
+            href={"/"}
+          >
             <Image
               src={"/assets/images/logo/gym-match-logo.svg"}
               alt="logo image"
-              width={50}
-              height={50}
+              width={75}
+              height={75}
             />
             <Typography
               variant="h5"
-              className="flex items-center justify-center"
+              className="flex items-center justify-center ml-2"
             >
               Gym Match
             </Typography>
-          </div>
+          </Link>
 
           <div className="grid grid-cols-3 justify-between gap-4">
             {LINKS.map(({ title, items }) => (
