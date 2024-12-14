@@ -61,5 +61,20 @@ module.exports = withMT({
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    function ({ addComponents, theme }: any) {
+      addComponents({
+        ".container-size": {
+          marginInline: "auto", //  mx-auto
+          "@screen lg": {
+            maxWidth: theme("maxWidth.5xl"), // lg:max-w-5xl
+          },
+          "@screen xl": {
+            maxWidth: theme("maxWidth.7xl"), // xl:max-w-7xl
+          },
+        },
+      });
+    },
+  ],
 });
