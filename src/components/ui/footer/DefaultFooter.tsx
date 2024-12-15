@@ -24,7 +24,7 @@ const currentYear = new Date().getFullYear();
 
 function DefaultFooter() {
   return (
-    <footer className="relative w-full py-14 md:py-16 lg:py-20">
+    <footer className="relative w-full py-12 md:py-14 lg:py-16 shadow-top">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 items-start gap-4 md:grid-cols-2">
           <Link

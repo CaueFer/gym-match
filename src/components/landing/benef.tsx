@@ -20,7 +20,7 @@ function BenefSection() {
               <h3 className="text-xl font-semibold mb-2">
                 Match personalizada e eficiente
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-900">
                 No Gym Match, encontre personal trainers que se encaixam no seu
                 estilo e objetivos, garantindo treinos únicos e personalizados
                 para o seu perfil.
@@ -31,7 +31,7 @@ function BenefSection() {
               <h3 className="text-xl font-semibold mb-2">
                 Treine no seu horário
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-900">
                 Conexão entre Alunos e Personal trainers sempre conectados.
                 Treine em qualquer horário com o suporte de quem entende os seus
                 objetivos.
@@ -42,7 +42,7 @@ function BenefSection() {
               <h3 className="text-xl font-semibold mb-2">
                 Mais flexibilidade para treinar
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-900">
                 Escolha quando e onde treinar com seu personal. No Gym Match,
                 você tem total liberdade para montar seu plano de treino sem
                 perder a qualidade.

@@ -15,12 +15,12 @@ function CopySection() {
           <h2 className="text-4xl sm:text-5xl text-white font-semibold">
             Conexões Que Transformam
           </h2>
-          <p className="text-xl max-w-xl text-gray-100 mt-4 mb-6">
+          <p className="text-xl max-w-xl text-white mt-4 mb-6">
             Faça match com o personal ideal ou encontre alunos em busca do seu
             conhecimento. Planeje treinos, gerencie sua agenda e foque no que
             importa: resultados.
           </p>
-          <Button className="text-md flex flex-row">
+          <Button className="text-md flex flex-row shadow-2xl">
             Experimente grátis <ArrowRight className="ml-2 text-md" />
           </Button>
         </div>
