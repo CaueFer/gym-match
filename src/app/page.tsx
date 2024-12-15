@@ -1,3 +1,5 @@
+
+import BenefSection from "@/components/landing/benef";
 import CopySection from "@/components/landing/copy";
 import Hero from "@/components/landing/hero";
 import QandA from "@/components/landing/qanda";
@@ -12,9 +14,11 @@ export default function Home() {
       <main className="flex flex-col flex-1 w-screen">
         <Hero />
 
-        <CopySection />
+        <BenefSection />
 
         <QandA />
+
+        <CopySection />
       </main>
 
       <DefaultFooter />

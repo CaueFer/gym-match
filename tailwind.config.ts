@@ -13,6 +13,7 @@ module.exports = withMT({
     extend: {
       colors: {
         primaryPurple: "#7866F2",
+        darkPrimaryPurple: "#453B8C",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
